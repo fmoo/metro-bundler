@@ -29,7 +29,7 @@ const assetPropertyBlacklist = new Set([
   'path',
 ]);
 
-const ASSET_REGISTRY_PATH = 'react-native/Libraries/Image/AssetRegistry';
+const ASSET_REGISTRY_PATH = 'AssetRegistry';
 
 function generateAssetCodeFileAst(assetDescriptor: AssetDescriptor): Object {
   const properDescriptor = filterObject(assetDescriptor, assetPropertyBlacklist);

@@ -71,7 +71,7 @@ class Resolver {
 
   static async load(opts: Options): Promise<Resolver> {
     const depGraphOpts = Object.assign(Object.create(opts), {
-      assetDependencies: ['react-native/Libraries/Image/AssetRegistry'],
+      assetDependencies: ['AssetRegistry'],
       forceNodeFilesystemAPI: false,
       ignoreFilePath(filepath) {
         return filepath.indexOf('__tests__') !== -1 ||
